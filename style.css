@@ -63,13 +63,29 @@ ul li a:hover {
 .submenu {
     display: none; /* Hide the submenu initially */
     position: absolute;
+    left: 0; /* Align submenu to the left of the parent */
+    top: 100%; /* Position it below the parent */
     background-color: #333; /* Background for submenu */
-    padding: 10px 0;
+    padding: 10px 0; /* Padding around submenu */
     z-index: 1; /* Ensure submenu is above other elements */
 }
 
 ul li:hover .submenu {
     display: block; /* Show the submenu on hover */
+}
+
+.submenu li {
+    margin: 0; /* Reset margin for submenu items */
+}
+
+.submenu li a {
+    padding: 10px 20px; /* Add padding for submenu items */
+    color: #fff; /* Text color for submenu items */
+    display: block; /* Make the entire area clickable */
+}
+
+.submenu li a:hover {
+    background-color: #575757; /* Background color on hover for submenu */
 }
 
 .content h1 {
